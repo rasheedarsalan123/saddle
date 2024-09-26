@@ -66,8 +66,9 @@ const AddSaddle = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-col w-[full] ml-5 flex-wrap gap-5">
-        <div className="text-blue-500 gap-5 flex ml-[60px]">
+    < div className=" flex  items-center  w-100% h-100% flex-wrap ">
+      <div className="flex   w-auto   ml-5 flex-wrap gap-8 ">
+        <div className="  justify-center items-center text-center sm: text-blue-500 gap-5 flex flex-start ">
           <h1 className="text-5xl text-blue-900 font-semibold">
             Horse Profile
           </h1>
@@ -86,10 +87,12 @@ const AddSaddle = () => {
             </button>
           </div>
         </div>
-        <div className="flex w-[full] justify-center flex-wrap ">
-          <div className="flex flex-col justify-between rounded-lg w-80 h-[200px] p-5 border-solid border-2 border-blue-500">
-            <div className="flex gap-14 w-70 justify-between">
-              <div className="flex w-50 justify-between">
+        
+        <div className="flex w-full gap-[20px] justify-start flex-wrap  ">
+          
+          <div className="flex flex-col   w-[427px]  justify-between rounded-lg h-[261px] p-5 border-solid border-2 border-blue-500">
+            <div className="flex gap-14   justify-between">
+              <div className="flex justify-between">
                 <h1 className="text-2xl text-blue-900 font-semibold">ADD</h1>
               </div>
               <div className="">
@@ -107,22 +110,25 @@ const AddSaddle = () => {
               <h1>Last Date </h1>
             </div>
           </div>
-          <div className="flex w-[900px] justify-between  flex-wrap">
+      
             {localStorageData &&
               localStorageData.map((item, index) => (
                 <>
                   <div
                     key={index}
-                    className="flex flex-wrap justify-between flex-col rounded-lg  h-[200px] p-5 border-solid border-2 border-blue-500"
+                    className="flex flex-col w-[427px]  justify-between rounded-lg h-[261px] p-5 border-solid border-2 border-blue-500"
                   >
-                    <div className="flex-wrap flex  justify-between">
-                      <div className=" flex space-x-3">
+                    <div className=" flex  ">
+                      <div className=" flex space-x-40 justify-between">
+                       <div>
                         <h1 className="text-2xl text-blue-900 font-semibold">
                           {item.Name}
-                        </h1>
+                        </h1> </div>
+                      <div>
                         <h1 className="text-2xl text-blue-900 font-semibold">
+                          
                           {item.horse}
-                        </h1>
+                        </h1> </div>
                       </div>
                       <div className="">
                         <h1 className="text-2xl text-blue-900 font-semibold"></h1>
@@ -145,7 +151,7 @@ const AddSaddle = () => {
                         Select Box
                       </label>
                     </div>
-                    <div className="border-dotted border-2 w-60 mt-10 border-gray-500"></div>
+                    <div className=" w-auto border-dotted border-2  mt-10 border-gray-500"></div>
                     <div className="flex justify-between">
                       <h1>Date of Birth</h1>
                       <h1>{item.BirthDate}</h1>
@@ -236,10 +242,12 @@ const AddSaddle = () => {
                     </div>
                   )}
                 </>
-              ))}{" "}
+              ))}
+          </div>
           </div>
         </div>
-      </div>
+  
+      
       {addSaddle && (
         <DetailPage
           setAddSaddle={setAddSaddle}
