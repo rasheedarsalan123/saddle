@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import DetailPage from "./DetailPage";
-import { MdOutlineDeleteOutline } from "react-icons/md";
-import { FaUserPen } from "react-icons/fa6";
+
+import { LuPenLine } from "react-icons/lu";
+import { AiOutlineDelete } from "react-icons/ai";
 
 const AddSaddle = () => {
   const [addSaddle, setAddSaddle] = useState(false);
@@ -66,45 +67,60 @@ const AddSaddle = () => {
 
   return (
     <>
-    < div className=" flex  items-center  w-100% h-100% flex-wrap ">
-      <div className="flex   w-auto   ml-5 flex-wrap gap-8 ">
-        <div className="  justify-center items-center text-center sm: text-blue-500 gap-5 flex flex-start ">
-          <h1 className="text-5xl text-blue-900 font-semibold">
-            Horse Profile
-          </h1>
-          <div className="flex items-center space-x-2">
+    <div className="   flex  relative justify-start  items-center  w-100% h-100% flex-wrap" >
+    <div className=" w-full h-full flex justify-center items-center  absolute top-[-50px] z-[-1]
+     left-[600px] right-0 " style={{background:'url(/download.svg)',backgroundRepeat:'no-repeat', width:'auto' }} >
+    </div>
+   
+      <div className=" flex  lg:flex px-[150px] justify-between  mt-[110px]  w-[100%] h-full  " >
+        <div className=" flex flex-col  ">
+        <div>
+        <img src="/star_img--Q7na--3.svg" alt="" /> </div>
+        <div className=" flex flex-col w-[480px] gap-5
+          ">
+          <h1 className="text-5xl text-[#2b364b] add-horse font-[700]  text-[64px] leading-[100%]">
+            HORSE PROFILE
+          </h1> </div>
+          <div className=" gap-10 pt-5 font-[Montserrat]"> <h3>Find the information you have added below.</h3>  </div> </div>
+          <div className=" flex  ">
+          <div className="flex items-center justify-between gap-10 flex-row-reverse ">
             <button
               onClick={handlerDelete}
-              className="text-2xl border-solid border-2 border-blue-500 h-[10] w-[130px] rounded-md p-1 text-white bg-blue-900 font-semibold"
+              className=" border-solid border-2 text-[20px] font-[500] border-[#2b364b] text-[#2b364b] rounded-[30px] w-[200px] h-[50px]"
             >
               Delete
             </button>
             <button
-              className="text-2xl border-solid border-2 w-[120px]  border-blue-500 rounded-md p-1 text-white bg-blue-900 font-semibold"
+              className=" bg-[#2b364b] font-[500] text-[20px]  text-white p-1 rounded-[30px] w-[200px] h-[50px]"
               onClick={handletselextAll}
             >
               Select All
             </button>
+            
+            </div>
           </div>
-        </div>
         
-        <div className="flex w-full gap-[20px] justify-start flex-wrap  ">
+        </div> 
+        <div className="flex w-auto  px-[150px] items-center mt-[80px] gap-[20px] justify-start flex-wrap  ">
           
-          <div className="flex flex-col   w-[427px]  justify-between rounded-lg h-[261px] p-5 border-solid border-2 border-blue-500">
-            <div className="flex gap-14   justify-between">
-              <div className="flex justify-between">
-                <h1 className="text-2xl text-blue-900 font-semibold">ADD</h1>
+          <div className="flex flex-col   w-[427px]  justify-between rounded-lg h-[261px] p-5 
+          border-solid border-2 border-blue-500">
+    
+            <div className="flex   items-center text-center justify-between ">
+              <div className="flex  ">
+                <h1 className="text-[44px] text-[#2b364b] font-[700] add-horse">ADD HORSE</h1>
               </div>
-              <div className="">
+              <div className=" flex  w-[50px] h-[50px] items-center cursor-pointer
+               justify-center rounded-[9999px] border-dashed border-2 border-[#2b364b] text-[25px]">
                 <button
                   onClick={() => setAddSaddle(true)}
-                  className="flex items-center font-bold border w-15 border-black border-dotted p-5 text-center h-[40px] text-2xl text-blue-900 rounded-full"
+                
                 >
                   +
                 </button>
               </div>
             </div>
-            <div className="border-dotted border-2 w-70 mt-10 border-gray-500"></div>
+            <div className="border-dotted border w-70 mt-20 border-red-200"></div>
             <div className="flex justify-between">
               <h1>Date of Birth</h1>
               <h1>Last Date </h1>
@@ -119,42 +135,46 @@ const AddSaddle = () => {
                     className="flex flex-col w-[427px]  justify-between rounded-lg h-[261px] p-5 border-solid border-2 border-blue-500"
                   >
                     <div className=" flex  ">
-                      <div className=" flex space-x-40 justify-between">
+                      <div className=" flex items-center gap-40">
                        <div>
-                        <h1 className="text-2xl text-blue-900 font-semibold">
+                        <h1 className="text-[40px] text-[#2b364b] add-horse font-[700]">
                           {item.Name}
                         </h1> </div>
-                      <div>
-                        <h1 className="text-2xl text-blue-900 font-semibold">
+                      <div className=" flex justify-between">
+                        <h1 className="text-2xl text-[#2b364b] add-horse font-[700]">
                           
                           {item.horse}
                         </h1> </div>
                       </div>
                       <div className="">
-                        <h1 className="text-2xl text-blue-900 font-semibold"></h1>
+                        <h1 className="text-2xl text-[#2b364b] font-semibold"></h1>
                       </div>
                     </div>
-                    <div className="flex gap-4 items-center cursor-pointer">
-                      <MdOutlineDeleteOutline
+                    <div className="flex gap-4 items-center cursor-pointer ">
+                      <AiOutlineDelete
+                      className="text-blue-900 w-[14px]"
                         onClick={() => {
                           setDeletCom(true);
                           setIndexNumber(index);
                         }}
                       />
-                      <FaUserPen onClick={() => handlerEdit(index)} />
-                      <label>
+                      <LuPenLine
+                      className="text-blue-900 w-[14px]"
+                      onClick={() => handlerEdit(index)} />
+                      <label   className="font-[Montserrat] text-[#2b364b] font-[400]">
                         <input
+                      
                           type="checkbox"
                           onChange={() => handleSelect(index)}
                           checked={selectedItems.includes(index)}
                         />{" "}
-                        Select Box
+                        Select horse
                       </label>
                     </div>
-                    <div className=" w-auto border-dotted border-2  mt-10 border-gray-500"></div>
+                    <div className=" w-auto border-dotted border  mt-8 border-red-200"></div>
                     <div className="flex justify-between">
                       <h1>Date of Birth</h1>
-                      <h1>{item.BirthDate}</h1>
+                      <h1 className="font-[Montserrat] font-[700] text-[#2b364b] ">{item.BirthDate}</h1>
                     </div>
                   </div>
 
@@ -245,9 +265,9 @@ const AddSaddle = () => {
               ))}
           </div>
           </div>
-        </div>
-  
-      
+        
+        
+       
       {addSaddle && (
         <DetailPage
           setAddSaddle={setAddSaddle}
