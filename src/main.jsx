@@ -6,6 +6,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AddSaddle from './Component/AddSaddle/AddSaddle.jsx'
+import Home from './Component/AddSaddle/Home.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
@@ -13,7 +14,10 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/addSaddle',
-        element:<AddSaddle/>}
+        element:<AddSaddle/>},
+        {
+          path:'/home',
+          element:<Home/>}
     ]
 
     

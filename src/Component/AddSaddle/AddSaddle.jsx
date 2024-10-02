@@ -67,31 +67,37 @@ const AddSaddle = () => {
 
   return (
     <>
-    <div className="   flex  relative justify-start  items-center  w-100% h-100% flex-wrap" >
-    <div className=" w-full h-full flex justify-center items-center  absolute top-[-50px] z-[-1]
+    <div className=" flex flex-col  sm:max-w-[1300px] justify-center  md:flex  relative md:justify-start  items-center 
+     w-100% h-100% flex-wrap" >
+    <div className=" hidden md:w-full h-full md:flex justify-center items-center  absolute
+     top-[-50px] z-[-1]
      left-[600px] right-0 " style={{background:'url(/download.svg)',backgroundRepeat:'no-repeat', width:'auto' }} >
     </div>
    
-      <div className=" flex  lg:flex px-[150px] justify-between  mt-[110px]  w-[100%] h-full  " >
-        <div className=" flex flex-col  ">
+      <div className=" flex   items-center  mx-[30px]
+       flex-wrap sm:flex  md:px-[150px]  mt-[90px] md:mt-[110px] md:w-[90%] h-auto  justify-between " >
+        <div className=" flex flex-col w-100%  ">
         <div>
         <img src="/star_img--Q7na--3.svg" alt="" /> </div>
-        <div className=" flex flex-col w-[480px] gap-5
+        <div className=" flex flex-col w-auto gap-5
           ">
-          <h1 className="text-5xl text-[#2b364b] add-horse font-[700]  text-[64px] leading-[100%]">
+          <h1 className=" text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
             HORSE PROFILE
           </h1> </div>
-          <div className=" gap-10 pt-5 font-[Montserrat]"> <h3>Find the information you have added below.</h3>  </div> </div>
+          <div className=" md:gap-10  pt-5 font-[Montserrat]"> <h3>Find the information you have added below.</h3>  </div> </div>
           <div className=" flex  ">
-          <div className="flex items-center justify-between gap-10 flex-row-reverse ">
+          <div className="flex  gap-5 pt-5 items-center w-auto justify-between md:gap-[40px] flex-row-reverse ">
             <button
               onClick={handlerDelete}
-              className=" border-solid border-2 text-[20px] font-[500] border-[#2b364b] text-[#2b364b] rounded-[30px] w-[200px] h-[50px]"
+              className=" border-solid border-2 md:text-[20px] text-[15px]  font-[500]
+               border-[#2b364b] text-[#2b364b] rounded-[30px] 
+               bg-[#ffffff1a] w-[120px]  px-[32px]  md:w-[181px]  md:px-[56px]  h-[56px]"
             >
               Delete
             </button>
             <button
-              className=" bg-[#2b364b] font-[500] text-[20px]  text-white p-1 rounded-[30px] w-[200px] h-[50px]"
+              className=" bg-[#2b364b] font-[500] md:text-[20px] text-[15px] text-white p-1 rounded-[30px]
+               md:w-[209px] w-[150px]  px-[42px] md:px-[56px]  h-[56px]"
               onClick={handletselextAll}
             >
               Select All
@@ -101,14 +107,15 @@ const AddSaddle = () => {
           </div>
         
         </div> 
-        <div className="flex w-auto  px-[150px] items-center mt-[80px] gap-[20px] justify-start flex-wrap  ">
+        <div className="flex w-auto justify-center  md:px-[150px] items-center mt-[80px] 
+        gap-[20px]  flex-wrap  ">
           
-          <div className="flex flex-col   w-[427px]  justify-between rounded-lg h-[261px] p-5 
-          border-solid border-2 border-blue-500">
+          <div className="flex flex-col w-[313px]  md:w-[427px]  justify-between rounded-lg  md:h-[261px] h-[200px]
+           p-5  border-solid border-2 border-blue-500">
     
             <div className="flex   items-center text-center justify-between ">
               <div className="flex  ">
-                <h1 className="text-[44px] text-[#2b364b] font-[700] add-horse">ADD HORSE</h1>
+                <h1 className="md:text-[44px] text-[22px] text-[#2b364b] font-[700] add-horse">ADD HORSE</h1>
               </div>
               <div className=" flex  w-[50px] h-[50px] items-center cursor-pointer
                justify-center rounded-[9999px] border-dashed border-2 border-[#2b364b] text-[25px]">
@@ -132,12 +139,13 @@ const AddSaddle = () => {
                 <>
                   <div
                     key={index}
-                    className="flex flex-col w-[427px]  justify-between rounded-lg h-[261px] p-5 border-solid border-2 border-blue-500"
+                    className="flex flex-col w-[313px] md:w-[427px]  justify-between rounded-lg
+                     md:h-[261px] h-[200px] p-5 border-solid border-2 border-blue-500"
                   >
                     <div className=" flex  ">
                       <div className=" flex items-center gap-40">
                        <div>
-                        <h1 className="text-[40px] text-[#2b364b] add-horse font-[700]">
+                        <h1 className="md:text-[40px] text-[20px] text-[#2b364b] add-horse font-[700]">
                           {item.Name}
                         </h1> </div>
                       <div className=" flex justify-between">
