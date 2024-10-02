@@ -75,7 +75,7 @@ const AddSaddle = () => {
     </div>
    
       <div className=" flex   items-center  mx-[30px]
-       flex-wrap sm:flex  md:px-[150px]  mt-[90px] md:mt-[110px] md:w-[90%] h-auto  justify-between " >
+       flex-wrap sm:flex  md:px-[150px]  mt-[50px] md:mt-[110px] md:w-[90%] h-auto  justify-between " >
         <div className=" flex flex-col w-100%  ">
         <div>
         <img src="/star_img--Q7na--3.svg" alt="" /> </div>
@@ -84,20 +84,20 @@ const AddSaddle = () => {
           <h1 className=" text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
             HORSE PROFILE
           </h1> </div>
-          <div className=" md:gap-10  pt-5 font-[Montserrat]"> <h3>Find the information you have added below.</h3>  </div> </div>
+          <div className=" md:gap-10 pt-5 font-[Montserrat]"> <h3>Find the information you have added below.</h3>  </div> </div>
           <div className=" flex  ">
-          <div className="flex  gap-5 pt-5 items-center w-auto justify-between md:gap-[40px] flex-row-reverse ">
+          <div className="flex  gap-5 pt-5  items-center w-auto justify-between md:gap-[40px] flex-row-reverse ">
             <button
               onClick={handlerDelete}
-              className=" border-solid border-2 md:text-[20px] text-[15px]  font-[500]
-               border-[#2b364b] text-[#2b364b] rounded-[30px] 
-               bg-[#ffffff1a] w-[120px]  px-[32px]  md:w-[181px]  md:px-[56px]  h-[56px]"
+              className=" border-solid border-2 md:text-[20px] text-[15px]  p-1  font-[500]
+               border-[#2b364b] text-[#2b364b] rounded-[30px]
+                bg-[#ffffff1a]  text-center   w-[120px] sm:w-[181px]  md:px-[56px]  h-[56px]"
             >
               Delete
             </button>
             <button
-              className=" bg-[#2b364b] font-[500] md:text-[20px] text-[15px] text-white p-1 rounded-[30px]
-               md:w-[209px] w-[150px]  px-[42px] md:px-[56px]  h-[56px]"
+              className=" bg-[#2b364b] font-[500] select-all md:text-[20px] text-[15px] text-white p-1
+               rounded-[30px] md:w-[209px] w-[150px] text-center  px-[32px] md:px-[56px]  h-[56px]"
               onClick={handletselextAll}
             >
               Select All

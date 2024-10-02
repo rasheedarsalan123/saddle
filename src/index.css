@@ -6,3 +6,8 @@
 .add-horse{
     font-family: "Barlow Condensed";
 }
+
+.select-all{
+    border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+    border-width:2px;
+}

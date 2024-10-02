@@ -21,10 +21,11 @@ const Header = () => {
     
    
         <div className=' flex  justify-between lg:flex lg:justify-between '>
-            <ul className=' flex gap-5 lg:flex cursor-pointer  justify-center md:gap-10  items-center font-semibold text-white flex-wrap'>
+            <ul className=' flex gap-5 lg:flex cursor-pointer font-[Montserrat] 
+             justify-center md:gap-6  items-center font-semibold text-white flex-wrap'>
             <li className='hidden lg:block'>My Horse</li>
             <li className='hidden lg:block'> <Link to={'/addsaddle'}>My Saddle</Link> </li>
-            <li className='hidden lg:block'> Bay a Saddle</li>
+            <li className='hidden lg:block'> Buy a Saddle</li>
             <li className='hidden lg:block'> Schedule Now</li>
             <li className=' text-[23px]'><FiShoppingCart/></li>
             <li className=' text-[23px]'><FaRegHeart/></li>
