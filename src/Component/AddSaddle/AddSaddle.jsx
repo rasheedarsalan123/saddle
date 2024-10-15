@@ -107,7 +107,7 @@ const AddSaddle = () => {
           </div>
         
         </div> 
-        <div className="flex w-auto justify-center  md:px-[150px] items-center mt-[80px] 
+        <div className="flex w-auto mx-[30px] md:px-[150px] items-center mt-[80px] 
         gap-[20px]  flex-wrap  ">
           
           <div className="flex flex-col w-[313px]  md:w-[427px]  justify-between rounded-lg  md:h-[261px] h-[200px]

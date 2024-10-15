@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa6";
 import AddSaddle from './AddSaddle/AddSaddle';
@@ -6,6 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Link } from 'react-router-dom';
 const Header = () => {
+  const [sidebar,setSidebar]=useState(false)
   return (
 
     
@@ -31,13 +32,27 @@ const Header = () => {
             <li className=' text-[23px]'><FaRegHeart/></li>
             <button className='hidden lg:block border-solid border-2 border-white rounded-[20px] w-[90px] h-[40px]'
             > Sign Out</button>
-                     <li className='lg:hidden text-white text-[23px] flex '> <RxHamburgerMenu/> </li>
+                     <li className='lg:hidden text-white text-[23px] flex ' onClick={()=>setSidebar(true)}> <RxHamburgerMenu/> </li>
 
             </ul>
-       
+            
+           
     </div>
+   
+    
 </div>
-       
+{ sidebar && <>
+            <div className=' flex fixed   bg-[#2b364b] w-full h-full'> </div>
+            <div className=' flex justify-center items-center absolute top-48 '>
+              <div className=' flex fixed   flex-col justify-center items-center text-white'>
+                <ul className=' flex gap-10 flex-col text-center'>
+              <li className=''>My Horse</li>
+            <li className=''> <Link to={'/addsaddle'}>My Saddle</Link> </li>
+            <li className=''> Buy a Saddle</li>
+            <li className=''> Schedule Now</li>
+            <button className=' border-solid border-2 border-white rounded-[20px] w-[90px] h-[40px]'
+            > Sign Out</button></ul>
+</div> </div> </>  }
 </div> 
    
   )
