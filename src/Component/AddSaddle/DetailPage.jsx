@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { MdClear } from "react-icons/md";
 import { MdOutlineFileUpload } from "react-icons/md";
 import { MdOutlineDateRange } from "react-icons/md";
+import { Calendar, DateObject } from "react-multi-date-picker";
 import DatePikar from "./DatePikar";
 
 const DetailPage = ({
@@ -14,6 +15,11 @@ const DetailPage = ({
 }) => {
   // const modalRef = useRef(null);
   const [openDatePicker, setOpenDatePicker] = useState(false);
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const [showCalender, setShowCalender] = useState(true);
+  const [year, setYear] = useState(2024);
+  const [selectDate, setSelectDate] = useState("");
+  const [chnagcolMonth, setChnagcolMonth] = useState("January");
   const handlerInputvalue = (e) => {
     const { name, value } = e.target;
     setInputVal((prevValue) => ({
@@ -23,6 +29,22 @@ const DetailPage = ({
   };
 
   console.log("openDatePikar", openDatePicker);
+
+  const handleDatePickerSelect = (selectedDate) => {
+    console.log("123", selectedDate);
+    // setDate(selectedDate);
+    // setDay("1");
+    // setMonth(selectedDate.month.name);
+    // setYear(selectedDate.year);
+    setSelectDate(`01 01 ${selectedDate.year}`);
+    // methods.setValue(
+    //   "dob",
+    //   `01/${selectedDate.day ? "01" : "01"}/${selectedDate.year}`
+    // );
+    setShowCalender(false);
+  };
+
+  console.log("select", selectDate);
 
   const handlerSave = () => {
     if (inputVal.Name.trim() && inputVal.BirthDate && inputVal.horse) {
@@ -88,14 +110,6 @@ const DetailPage = ({
             <form onSubmit={(e) => e.preventDefault()}>
               <div className=" flex flex-col justify-between space-y-4">
                 <div className="flex  flex-col relative h-[56px]">
-                  <label
-                    htmlFor="Name"
-                    className=" absolute top-[10px]
-             text-[#2b364b] translate-y-[-50%] leading-[14px] font-[Montserrat]  bg-white left-[10px] 
-             pr-[12px] pl-[12px] z-10  text-[12px]  "
-                  >
-                    Horse Name:*{" "}
-                  </label>
                   <div className=" relative">
                     <input
                       name="Name"
@@ -106,37 +120,98 @@ const DetailPage = ({
                       className="w-[100%] mt-2 p-5 text-[14px] h-[44px]  rounded-[60px] 
                 leading-[14px]  border border-[#2b364b] "
                     />
-                  </div>{" "}
+                  </div>
                 </div>
                 <div className="flex  flex-col relative h-[56px] ">
-                  <label
-                    htmlFor="Birth Date"
-                    className=" absolute top-[10px]
-               translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                text-[12px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  "
-                  >
-                    Birth Date:*
-                  </label>
-                  <div className=" relativ">
-                    <input
-                      name="BirthDate"
-                      value={inputVal.BirthDate}
-                      onChange={handlerInputvalue}
-                      placeholder="Select horse DOB"
-                      type=""
-                      className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
+                  {showDatePicker ? (
+                    <div>
+                      <input
+                        value={`01/${"01" ? `01` : "01"}/${year}`}
+                        type="text"
+                        placeholder="date and time"
+                        readOnly
+                        // name="BirthDate"
+                        // value={inputVal.BirthDate}
+                        onClick={() => setShowCalender(!showCalender)}
+                        className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
                  h-[43px] text-[#2b364b] rounded-[60px]
                  leading-[14px] font-[Montserrat]  "
-                    />
-                  </div>
+                      />
+
+                      {showCalender && (
+                        <div
+                          className="relative "
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <div className="absolute z-10">
+                            <Calendar
+                              // ref={calendarRef}
+                              style={{
+                                marginTop: "10px",
+                                borderRadius: "10px",
+                              }}
+                              // value={`${day ? `${day}` : "1"}/${val}/${yearVal}`}
+                              value={`01 january ${year}`}
+                              format="DD/MMMM/YYYY"
+                              calendarPosition="bottom-left"
+                              onChange={handleDatePickerSelect}
+                              buttons={false}
+                              highlightToday={false}
+                              className="custom-calendar  z-0"
+                              inputClass="custom-input"
+                              disableYearPicker
+                              disableMonthPicker
+                            />
+                          </div>
+
+                          {/* <ChevronDownRightIcon
+                            onClick={() => setShowDatePicker(false)}
+                            className="!absolute !text-transparent !top-9 !left-[400px] !z-50"
+                          /> */}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <>
+                      <label
+                        htmlFor="Birth Date"
+                        className=" absolute top-[10px]
+                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
+                  text-[12px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  "
+                      >
+                        Birth Date:*
+                      </label>
+                      <input
+                        onChange={handlerInputvalue}
+                        placeholder="Select horse DOB"
+                        type=""
+                        className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
+                 h-[43px] text-[#2b364b] rounded-[60px]
+                 leading-[14px] font-[Montserrat]  "
+                      />
+                    </>
+                  )}
+
                   <div
                     className="absolute top-5 right-2 text-blue-500 text-[15px]"
                     onClick={() => {
                       setOpenDatePicker(!openDatePicker);
                     }}
                   >
-                    <MdOutlineDateRange />
+                    <MdOutlineDateRange className="relative" />
                   </div>
+                  {openDatePicker && (
+                    <div className=" absolute top-[56px] left-[-30px] z-10">
+                      <DatePikar
+                        setOpenDatePicker={setOpenDatePicker}
+                        setShowDatePicker={setShowDatePicker}
+                        year={year}
+                        setYear={setYear}
+                        chnagcolMonth={chnagcolMonth}
+                        setChnagcolMonth={setChnagcolMonth}
+                      />
+                    </div>
+                  )}
                 </div>
                 <div className="flex  flex-col relative h-[56px] ">
                   <label
@@ -188,7 +263,6 @@ const DetailPage = ({
           </div>
         </div>
       </div>
-      {openDatePicker && <DatePikar />}
     </>
   );
 };

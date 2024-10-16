@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 
-const DatePikar = () => {
-  const [changCol, setChangCol] = useState(null);
-  const [chnagcolMonth ,setChnagcolMonth] =useState(null)
+const DatePikar = ({
+   setOpenDatePicker,setShowDatePicker,
+   setChnagcolMonth,chnagcolMonth,
+   year,setYear }) => {
+  
+  
+
   const months = [
     "January",
     "February",
@@ -17,21 +21,20 @@ const DatePikar = () => {
     "November",
     "December",
   ];
-  const years = [
-    2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013,
-  ];
-  const handlerColorChnag = (year,e) => {
-    console.log(year,e)
-    setChangCol(year);
+  const years = [];
+  for (let year = 2024; year >= 1996; year--) {
+    years.push(year);
+  }
+
+  const handlerColorChnag = (yearS) => {
+    console.log(yearS);
+    setYear(yearS);
   };
   const handlerColorChnagMonth = (month) => {
-    setChnagcolMonth(month);
+    // setChnagcolMonth(month);
   };
   return (
-    <div
-      class="fixed inset-0 z-40 top-48  left-2 w-100% h-100% min-h-full overflow-y-auto   overflow-x-hidden transition flex 
-    items-center"
-    >
+    <>
       <div
         class="w-[360px]  h-[320px] rounded-lg border-solid border border-black bg-white
            cursor-default pointer-events-auto
@@ -42,7 +45,7 @@ const DatePikar = () => {
             class="text-[18px]  font-[Montserrat] text-[#2b364b] font-[700] tracking-tight"
             id="page-action.heading"
           >
-            January 2024
+            {chnagcolMonth} {year}
           </h2>
         </div>
         <div
@@ -52,35 +55,47 @@ const DatePikar = () => {
         >
           <div className="   month    flex flex-col   overflow-y-scroll border-r  border-gray-300">
             {months.map((month, index) => (
-              <div key={index} className={`flex px-10 py-3 ${
-                 chnagcolMonth === month ? "bg-blue-100 " : ""} `} onClick={()=> handlerColorChnagMonth(month)}>
+              <div
+                key={index}
+                className={`flex px-10 py-3 ${
+                  index === 0 ? "bg-blue-100 " : ""
+                } `}
+                onClick={() => handlerColorChnagMonth(month)}
+              >
                 {month}
               </div>
             ))}
           </div>
-   
+
           <div className=" flex flex-col items-center month w-[200px] text-center  overflow-y-scroll ">
-            {years.map((year, index) => (
+            {years.map((yearS, index) => (
               <div
                 key={index}
                 className={`px-10 py-3 flex text-center w-full ${
-                  changCol === year ? "bg-blue-100 " : ""
+                  year === yearS ? "bg-blue-100 " : ""
                 }`}
-                onClick={(e) => handlerColorChnag(year,e)}
+                onClick={() => handlerColorChnag(yearS)}
               >
-                <p> {year} </p>
+                <p> {yearS} </p>
               </div>
             ))}
           </div>
         </div>
         <div className=" "></div>
         <div class=" flex  justify-center items-center mt-3">
-          <button className=" rounded-[25px] bg-[#2b364b] p-1 text-white w-[65px]">
+          <button
+            className=" rounded-[25px] bg-[#2b364b] p-1 text-white w-[65px]"
+            onClick={() => {
+              setOpenDatePicker(false);
+              setShowDatePicker(true);
+            }}
+          >
             Apply
           </button>
         </div>
       </div>
-    </div>
+      
+    </>
   );
 };
 
