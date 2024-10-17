@@ -36,7 +36,9 @@ const DetailPage = ({
     // setDay("1");
     // setMonth(selectedDate.month.name);
     // setYear(selectedDate.year);
-    setSelectDate(`01 01 ${selectedDate.year}`);
+    const formattiDtae = `01 01 ${selectedDate.year}`;
+    setSelectDate(formattiDtae);
+    setInputVal((preveInput)=>({...preveInput, BirthDate: formattiDtae,}))
     // methods.setValue(
     //   "dob",
     //   `01/${selectedDate.day ? "01" : "01"}/${selectedDate.year}`
@@ -47,7 +49,7 @@ const DetailPage = ({
   console.log("select", selectDate);
 
   const handlerSave = () => {
-    if (inputVal.Name.trim() && inputVal.BirthDate && inputVal.horse) {
+    if (inputVal.Name.trim() && selectDate && inputVal.horse) {
       const existingData =
         JSON.parse(localStorage.getItem("SaveInputValue")) || [];
       if (editIndex !== null) {
@@ -130,7 +132,7 @@ const DetailPage = ({
                         type="text"
                         placeholder="date and time"
                         readOnly
-                        // name="BirthDate"
+                        name="BirthDate"
                         // value={inputVal.BirthDate}
                         onClick={() => setShowCalender(!showCalender)}
                         className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]

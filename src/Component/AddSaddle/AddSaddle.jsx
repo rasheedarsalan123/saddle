@@ -136,6 +136,8 @@ const AddSaddle = () => {
       
             {localStorageData &&
               localStorageData.map((item, index) => (
+                console.log("itemsss",item),
+                
                 <>
                   <div
                     key={index}
@@ -182,7 +184,8 @@ const AddSaddle = () => {
                     <div className=" w-auto border-dotted border  mt-8 border-red-200"></div>
                     <div className="flex justify-between">
                       <h1>Date of Birth</h1>
-                      <h1 className="font-[Montserrat] font-[700] text-[#2b364b] ">{item.BirthDate}</h1>
+                      <h1 className="font-[Montserrat] font-[700] text-[#2b364b] ">
+                        {item.BirthDate}</h1>
                     </div>
                   </div>
 
