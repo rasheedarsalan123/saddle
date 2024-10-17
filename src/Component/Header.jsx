@@ -24,8 +24,8 @@ const Header = () => {
         <div className=' flex  justify-between lg:flex lg:justify-between '>
             <ul className=' flex gap-5 lg:flex cursor-pointer font-[Montserrat] 
              justify-center md:gap-6  items-center font-semibold text-white flex-wrap'>
-            <li className='hidden lg:block'>My Horse</li>
-            <li className='hidden lg:block'> <Link to={'/addsaddle'}>My Saddle</Link> </li>
+            <li className='hidden lg:block'>My Saddle</li>
+            <li className='hidden lg:block'> <Link to={'/addsaddle'}>My  Horse </Link> </li>
             <li className='hidden lg:block'> Buy a Saddle</li>
             <li className='hidden lg:block'> Schedule Now</li>
             <li className=' text-[23px]'><FiShoppingCart/></li>
@@ -46,8 +46,8 @@ const Header = () => {
             <div className=' flex justify-center items-center absolute top-48 '>
               <div className=' flex fixed   flex-col justify-center items-center text-white'>
                 <ul className=' flex gap-10 flex-col text-center'>
-              <li className=''>My Horse</li>
-            <li className=''> <Link to={'/addsaddle'}>My Saddle</Link> </li>
+              <li className=''>My Saddle</li>
+            <li className=''> <Link to={'/addsaddle'}>My Horse </Link> </li>
             <li className=''> Buy a Saddle</li>
             <li className=''> Schedule Now</li>
             <button className=' border-solid border-2 border-white rounded-[20px] w-[90px] h-[40px]'

@@ -36,9 +36,9 @@ const DetailPage = ({
     // setDay("1");
     // setMonth(selectedDate.month.name);
     // setYear(selectedDate.year);
-    const formattiDtae = `01 01 ${selectedDate.year}`;
+    const formattiDtae = `01/01/${selectedDate.year}`;
     setSelectDate(formattiDtae);
-    setInputVal((preveInput)=>({...preveInput, BirthDate: formattiDtae,}))
+    setInputVal((preveInput) => ({ ...preveInput, BirthDate: formattiDtae }));
     // methods.setValue(
     //   "dob",
     //   `01/${selectedDate.day ? "01" : "01"}/${selectedDate.year}`
@@ -89,7 +89,7 @@ const DetailPage = ({
 
         <div
           // ref={modalRef}
-          className="relative    w-[340px] h-[440px] md:w-[380px] md:h-[440px] flex flex-col justify-center
+          className="relative scale-[0.8] w-[340px] h-[440px] md:w-[380px] md:h-[440px] flex flex-col justify-center
          p-3 items-center z-10 bg-white  rounded-lg shadow-lg"
         >
           <div

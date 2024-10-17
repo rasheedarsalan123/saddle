@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 const DatePikar = ({
-   setOpenDatePicker,setShowDatePicker,
-   setChnagcolMonth,chnagcolMonth,
-   year,setYear }) => {
-  
-  
-
+  setOpenDatePicker,
+  setShowDatePicker,
+  setChnagcolMonth,
+  chnagcolMonth,
+  year,
+  setYear,
+}) => {
   const months = [
     "January",
     "February",
@@ -94,7 +95,6 @@ const DatePikar = ({
           </button>
         </div>
       </div>
-      
     </>
   );
 };
