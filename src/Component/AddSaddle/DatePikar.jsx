@@ -28,7 +28,6 @@ const DatePikar = ({
   }
 
   const handlerColorChnag = (yearS) => {
-    console.log(yearS);
     setYear(yearS);
   };
   const handlerColorChnagMonth = (month) => {
@@ -37,13 +36,13 @@ const DatePikar = ({
   return (
     <>
       <div
-        class="w-[360px]  h-[320px] rounded-lg border-solid border border-black bg-white
+        className="w-[360px]  h-[320px] rounded-lg border-solid border border-black bg-white
            cursor-default pointer-events-auto
              dark:bg-gray-800 relative  mx-auto max-w-sm"
       >
-        <div class="  text-center py-4  ">
+        <div className="  text-center py-4  ">
           <h2
-            class="text-[18px]  font-[Montserrat] text-[#2b364b] font-[700] tracking-tight"
+            className="text-[18px]  font-[Montserrat] text-[#2b364b] font-[700] tracking-tight"
             id="page-action.heading"
           >
             {chnagcolMonth} {year}
@@ -83,7 +82,7 @@ const DatePikar = ({
           </div>
         </div>
         <div className=" "></div>
-        <div class=" flex  justify-center items-center mt-3">
+        <div className=" flex  justify-center items-center mt-3">
           <button
             className=" rounded-[25px] bg-[#2b364b] p-1 text-white w-[65px]"
             onClick={() => {

@@ -28,10 +28,8 @@ const DetailPage = ({
     }));
   };
 
-  console.log("openDatePikar", openDatePicker);
 
   const handleDatePickerSelect = (selectedDate) => {
-    console.log("123", selectedDate);
     // setDate(selectedDate);
     // setDay("1");
     // setMonth(selectedDate.month.name);
@@ -46,7 +44,6 @@ const DetailPage = ({
     setShowCalender(false);
   };
 
-  console.log("select", selectDate);
 
   const handlerSave = () => {
     if (inputVal.Name.trim() && selectDate && inputVal.horse) {
@@ -113,14 +110,14 @@ const DetailPage = ({
               <div className=" flex flex-col justify-between space-y-4">
                 <div className="flex  flex-col relative h-[56px]">
                   <div className=" relative">
-                  <label
-                        htmlFor="Birth Date"
-                        className=" absolute top-[10px]
+                    <label
+                      htmlFor="Birth Date"
+                      className=" absolute top-[10px]
                  translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
                   text-[12px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  "
-                      >
-                        Horse Name :*
-                      </label>
+                    >
+                      Horse Name :*
+                    </label>
                     <input
                       name="Name"
                       value={inputVal.Name}
@@ -136,12 +133,12 @@ const DetailPage = ({
                   {showDatePicker ? (
                     <div>
                       <input
-                        value={`01/${"01" ? `01` : "01"}/${year}`}
+                        // value={`01/${"01" ? `01` : "01"}/${year}`}
                         type="text"
                         placeholder="date and time"
                         readOnly
                         name="BirthDate"
-                        // value={inputVal.BirthDate}
+                        value={inputVal.BirthDate}
                         onClick={() => setShowCalender(!showCalender)}
                         className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
                  h-[43px] text-[#2b364b] rounded-[60px]
@@ -183,31 +180,33 @@ const DetailPage = ({
                     </div>
                   ) : (
                     <>
-                      <label
-                        htmlFor="Birth Date"
-                        className=" absolute top-[10px]
+                      <div
+                        onClick={() => {
+                          setOpenDatePicker(!openDatePicker);
+                        }}
+                      >
+                        <label
+                          htmlFor="Birth Date"
+                          className=" absolute top-[10px]
                  translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
                   text-[12px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  "
-                      >
-                        Birth Date:*
-                      </label>
-                      <input
-                        onChange={handlerInputvalue}
-                        placeholder="Select horse DOB"
-                        type=""
-                        className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
+                        >
+                          Birth Date:*
+                        </label>
+                        <input
+                          onChange={handlerInputvalue}
+                          value={inputVal.BirthDate}
+                          placeholder="Select horse DOB"
+                          type=""
+                          className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
                  h-[43px] text-[#2b364b] rounded-[60px]
                  leading-[14px] font-[Montserrat]  "
-                      />
+                        />{" "}
+                      </div>
                     </>
                   )}
 
-                  <div
-                    className="absolute top-5 right-2 text-blue-500 text-[15px]"
-                    onClick={() => {
-                      setOpenDatePicker(!openDatePicker);
-                    }}
-                  >
+                  <div className="absolute top-5 right-2 text-blue-500 text-[15px]">
                     <MdOutlineDateRange className="relative" />
                   </div>
                   {openDatePicker && (
@@ -238,7 +237,12 @@ const DetailPage = ({
                  leading-[14px] font-[Montserrat]  border border-[#2b364b]"
                       name="horse"
                       onChange={handlerInputvalue}
+                      value={inputVal.horse}
                     >
+                      <option disabled value="">
+                        Select Horse Name
+                      </option>
+
                       <option value="Horse1">Horse1</option>
                       <option value="Horse2">Horse2</option>
                       <option value="Horse3">Horse3</option>
