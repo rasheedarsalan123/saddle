@@ -113,6 +113,14 @@ const DetailPage = ({
               <div className=" flex flex-col justify-between space-y-4">
                 <div className="flex  flex-col relative h-[56px]">
                   <div className=" relative">
+                  <label
+                        htmlFor="Birth Date"
+                        className=" absolute top-[10px]
+                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
+                  text-[12px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  "
+                      >
+                        Horse Name :*
+                      </label>
                     <input
                       name="Name"
                       value={inputVal.Name}
