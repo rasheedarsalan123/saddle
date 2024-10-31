@@ -25,10 +25,10 @@ const Header = () => {
         <div className=' flex  justify-between lg:flex lg:justify-between '>
             <ul className=' flex gap-5 lg:flex cursor-pointer font-[Montserrat] 
              justify-center md:gap-6  items-center font-semibold text-white flex-wrap'>
-            <li className='hidden lg:block'>My Saddle</li>
-            <li className='hidden lg:block'> <Link to={'/horses'}>My  Horse </Link> </li>
-            <li className='hidden lg:block'> Buy a Saddle</li>
-            <li className='hidden lg:block'> Schedule Now</li>
+            <li className='hidden lg:block'><Link to={'/mysaddle'}>My Saddle</Link></li>
+            <li className='hidden lg:block'> <Link to={'/horses'}>My  Horse</Link> </li>
+            <li className='hidden lg:block'><Link to={'/buysaddle'}> Buy a Saddle</Link></li>
+            <li className='hidden lg:block'> <Link to={'/schedule'}> Schedule Now </Link></li>
             <li className=' text-[23px]'><FiShoppingCart/></li>
             <li className=' text-[23px]'><FaRegHeart/></li>
             <button className='hidden lg:block border-solid border-2 border-white rounded-[20px] w-[90px] h-[40px]'
@@ -50,7 +50,7 @@ const Header = () => {
                 <ul className=' flex gap-10 flex-col text-center' onClick={()=>setSidebar(false)}>
               <li className=''><Link to={'/mysaddle'}>My Saddle</Link></li>
             <li className=''> <Link to={'/horses'}>My Horse </Link> </li>
-            <li className=''> <Link to={'/bayasaddle'}> Buy a Saddle</Link></li>
+            <li className=''> <Link to={'/buysaddle'}> Buy a Saddle</Link></li>
             <li className=''> <Link to={'/schedule'}> Schedule Now </Link></li>
             <button className=' border-solid border-2 border-white rounded-[20px] w-[90px] h-[40px]'
             > Sign Out</button></ul>
