@@ -10,6 +10,8 @@ const AddSaddle = () => {
   const [selectedItems, setSelectedItems] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
   const [editIndex, setEditIndex] = useState(null);
+  const [changeText,setChangeText] = useState(null);
+
   const [inputVal, setInputVal] = useState({
     Name: "",
     BirthDate: "",
@@ -69,11 +71,14 @@ const AddSaddle = () => {
   };
 
   const handlerEdit = (index) => {
+    setChangeText("Edit Horse")
     setInputVal(localStorageData[index]);
 
     setEditIndex(index);
 
     setAddSaddle(true);
+
+    
   };
 
   return (
@@ -152,7 +157,10 @@ const AddSaddle = () => {
                 className=" flex  w-[50px] h-[50px] items-center cursor-pointer
                justify-center rounded-[9999px] border-dashed border-2 border-[#2b364b] text-[25px]"
               >
-                <button onClick={() => setAddSaddle(true)}>+</button>
+                <button onClick={() => {
+                  setChangeText(null)
+                  setAddSaddle(true)
+                }}>+</button>
               </div>
             </div>
             <div className="border-dotted border w-70 mt-20 border-red-200"></div>
@@ -173,7 +181,7 @@ const AddSaddle = () => {
                      md:h-[261px] h-[200px] p-5 border-solid border-2 border-blue-500"
                 >
                   <div className="flex">
-                    <div className=" flex items-center gap-40">
+                    <div className=" flex items-center justify-between w-[100%]">
                       <div>
                         <h1 className="md:text-[40px] text-[20px] text-[#2b364b] add-horse font-[700]">
                           {item.Name}
@@ -221,7 +229,7 @@ const AddSaddle = () => {
 
                 {deletCom && (
                   <div
-                  className="fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex 
+                    className="fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex 
        items-center"
                   >
                     <div
@@ -310,6 +318,7 @@ const AddSaddle = () => {
 
       {addSaddle && (
         <DetailPage
+        changeText={changeText}
           setAddSaddle={setAddSaddle}
           editIndex={editIndex}
           setEditIndex={setEditIndex}

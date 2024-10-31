@@ -8,6 +8,7 @@ import DatePikar from "./DatePikar";
 const DetailPage = ({
   setAddSaddle,
   editIndex,
+  changeText,
   setEditIndex,
   inputVal,
   setInputVal,
@@ -101,7 +102,7 @@ const DetailPage = ({
          justify-center items-center text-center "
             >
               <h1 className="add-horse text-[48px]  text-[#2b364b] font-[700]">
-                ADD HORSE
+                {changeText ? changeText : "Add Horse"}
               </h1>
             </div>
           </div>
@@ -120,7 +121,7 @@ const DetailPage = ({
                     </label>
                     <input
                       name="Name"
-                      value={inputVal.Name}
+                      value={changeText && inputVal.Name}
                       onChange={handlerInputvalue}
                       type="text"
                       placeholder="Enter Your Horse Name"
@@ -195,7 +196,7 @@ const DetailPage = ({
                         </label>
                         <input
                           onChange={handlerInputvalue}
-                          value={inputVal.BirthDate}
+                          value={changeText && inputVal.BirthDate}
                           placeholder="Select horse DOB"
                           type=""
                           className="w-[100%]   border border-[#2b364b] mt-2 p-4 text-[14px]
@@ -237,9 +238,9 @@ const DetailPage = ({
                  leading-[14px] font-[Montserrat]  border border-[#2b364b]"
                       name="horse"
                       onChange={handlerInputvalue}
-                      value={inputVal.horse}
+                      value={changeText && inputVal.horse}
                     >
-                      <option disabled value="">
+                      <option disabled selected value="">
                         Select Horse Name
                       </option>
 
