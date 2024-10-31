@@ -17,6 +17,9 @@ const AddSaddle = () => {
     BirthDate: "",
     horse: "",
   });
+
+  console.log("inputVal",inputVal);
+  
   const [deletCom, setDeletCom] = useState(false);
   const [indexNumber, setIndexNumber] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -71,9 +74,9 @@ const AddSaddle = () => {
   };
 
   const handlerEdit = (index) => {
+
     setChangeText("Edit Horse")
     setInputVal(localStorageData[index]);
-
     setEditIndex(index);
 
     setAddSaddle(true);

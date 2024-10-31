@@ -29,15 +29,15 @@ const DetailPage = ({
     }));
   };
 
-
   const handleDatePickerSelect = (selectedDate) => {
     // setDate(selectedDate);
     // setDay("1");
     // setMonth(selectedDate.month.name);
     // setYear(selectedDate.year);
-    const formattiDtae = `01/01/${selectedDate.year}`;
-    setSelectDate(formattiDtae);
-    setInputVal((preveInput) => ({ ...preveInput, BirthDate: formattiDtae }));
+    const formatedDate = `01/01/${selectedDate.year}`;
+    setSelectDate(formatedDate);
+    setInputVal((preveInput) => ({ ...preveInput, BirthDate: formatedDate }));
+
     // methods.setValue(
     //   "dob",
     //   `01/${selectedDate.day ? "01" : "01"}/${selectedDate.year}`
@@ -45,9 +45,9 @@ const DetailPage = ({
     setShowCalender(false);
   };
 
-
   const handlerSave = () => {
-    if (inputVal.Name.trim() && selectDate && inputVal.horse) {
+    
+    if (inputVal.Name.trim() && (changeText ? inputVal.BirthDate : selectDate) && inputVal.horse) {
       const existingData =
         JSON.parse(localStorage.getItem("SaveInputValue")) || [];
       if (editIndex !== null) {
