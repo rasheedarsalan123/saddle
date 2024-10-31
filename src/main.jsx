@@ -7,17 +7,30 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AddSaddle from './Component/AddSaddle/AddSaddle.jsx'
 import Home from './Component/AddSaddle/Home.jsx'
+import MySaddle from './Component/AddSaddle/MySaddle.jsx'
+import BayAsaddle from './Component/AddSaddle/BayAsaddle.jsx'
+import Schedule from './Component/AddSaddle/Schedule.jsx'
 const router = createBrowserRouter([
   {
     path:'/',
     element:<App/>,
     children:[
       {
-        path:'/addSaddle',
+        path:'/horses',
         element:<AddSaddle/>},
         {
           path:'/home',
-          element:<Home/>}
+          element:<Home/>},
+          {
+            path:'/mysaddle',
+            element:<MySaddle/>},
+            {
+              path:'/bayasaddle',
+              element:<BayAsaddle/>},
+              {
+                path:'/schedule',
+                element:<Schedule/>}
+
     ]
 
     
