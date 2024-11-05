@@ -113,7 +113,7 @@ const AddSaddle = () => {
               className=" flex flex-col w-auto gap-5
           "
             >
-              <h1 className=" text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
+              <h1 className=" text-[44px] sm:text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
                 HORSE PROFILE
               </h1>{" "}
             </div>
