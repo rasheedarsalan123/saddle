@@ -24,7 +24,7 @@ const BayAsaddle = () => {
                 FITTING SADDLE
               </h1>{" "}
             </div>
-            <div className=" w-[410px] md:gap-10 pt-5 font-[Montserrat]">
+            <div className=" w-[330px] sm:w-[410px]  md:gap-10 pt-5 font-[Montserrat]">
               <h3>
                 SaddleFit uses advanced 3D technology to find the best fitting
                 saddle based on your horse’s unique shape for a perfect fit,
@@ -52,7 +52,8 @@ const BayAsaddle = () => {
             </div>
           </div> */}
         </div>
-        <div className=" md:flex  justify-between gap-10  ">
+        <div className=" md:flex pt-5  px-6 items-center justify-start lg:px-0 sm:mt-0 
+         gap-10 flex-wrap flex ">
           <div
             // onClick={() => {
             //   setOpenDatePicker(!openDatePicker);
@@ -154,16 +155,18 @@ const BayAsaddle = () => {
             </div>
           </div>
         </div>
-        <div className=" flex  gap-4 absolute  right-[210px] top-[250px] font-[Montserrat]  ">
+        <div className=" flex px-6  md:px-0 gap-4 absolute items-center justify-center
+         xl:right-[210px] xl:top-[250px] sm:top-[450px] top-[580px] font-[Montserrat]  ">
           <div className=" ">
             <VectorIcon />
           </div>
-          <h3>
+          <h3 className=" ">
             Saddle with this icon are the top fitting saddles for your horse!
           </h3>
         </div>
       </div>
-      <div className=" flex justify-center items-center mt-5 font-[Montserrat] ">
+      <div className=" flex  text-center justify-center items-center px-20 sm:px-0  sm:mt-24 mt-32
+       font-[Montserrat] flex-wrap ">
         Unfortunately, we do not have a saddle available for this horse. Please
         check back later.
       </div>

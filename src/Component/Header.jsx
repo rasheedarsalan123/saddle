@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <div
         className="flex bg-[#2b364b] 
-           px-[30px] xl:px-[80px] w-full h-[95px] justify-between
+           px-[30px] xl:px-[160px] w-full h-[95px] justify-between
    flex-wrap  relative z-10 "
       >
        
