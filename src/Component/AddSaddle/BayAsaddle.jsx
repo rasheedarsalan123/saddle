@@ -4,12 +4,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const BayAsaddle = () => {
   return (
     <>
-      <div className=" w-full h-full relative md:flex  md:items-center md:justify-center   ">
+      <div className=" w-full h-[100%] relative md:flex  md:items-center md:justify-center   ">
+        <div className=" flex flex-wrap w-auto h-auto ">
         <div
-          className=" flex w-[420px] items-center   mx-[30px]
+          className=" flex  w-auto items-center   mx-[30px]
        flex-wrap sm:flex   mt-[50px] md:mt-[110px]  h-auto  justify-between "
         >
-          <div className=" flex flex-col w-100%  ">
+          <div className="  w-100%  ">
             <div>
               <img src="/star_img--Q7na--3.svg" alt="" />{" "}
             </div>
@@ -17,7 +18,8 @@ const BayAsaddle = () => {
               className=" flex flex-col w-auto
           "
             >
-              <h1 className=" text-[48px] sm:text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
+              <h1 className=" text-[48px] sm:text-[54px] text-[#2b364b] add-horse font-[700]
+                md:text-[64px] leading-[100%]">
                 FIND YOUR BEST
               </h1>{" "}
               <h1 className=" text-[48px] sm:text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
@@ -53,7 +55,8 @@ const BayAsaddle = () => {
           </div> */}
         </div>
         <div className=" md:flex pt-5  px-6 items-center justify-start lg:px-0 sm:mt-0 
-         gap-10 flex-wrap flex ">
+         flex-wrap flex flex-col lg:justify-center gap-5 ">
+          <div className=" flex flex-wrap gap-4  ">
           <div
             // onClick={() => {
             //   setOpenDatePicker(!openDatePicker);
@@ -154,9 +157,9 @@ const BayAsaddle = () => {
               </select>
             </div>
           </div>
-        </div>
-        <div className=" flex px-6  md:px-0 gap-4 absolute items-center justify-center
-         xl:right-[210px] xl:top-[250px] sm:top-[450px] top-[580px] font-[Montserrat]  ">
+          </div>
+          <div className=" flex   gap-2  items-end text-center justify-center
+          font-[Montserrat]  ">
           <div className=" ">
             <VectorIcon />
           </div>
@@ -164,9 +167,11 @@ const BayAsaddle = () => {
             Saddle with this icon are the top fitting saddles for your horse!
           </h3>
         </div>
-      </div>
-      <div className=" flex  text-center justify-center items-center px-20 sm:px-0  sm:mt-24 mt-32
-       font-[Montserrat] flex-wrap ">
+        </div>
+       
+      </div> </div>
+      <div className=" flex  text-center justify-center items-center mt-4 px-20 sm:px-0 
+        font-[Montserrat] flex-wrap ">
         Unfortunately, we do not have a saddle available for this horse. Please
         check back later.
       </div>
