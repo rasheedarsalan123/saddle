@@ -54,7 +54,7 @@ const BayAsaddle = () => {
             </div>
           </div> */}
         </div>
-        <div className=" md:flex pt-5  px-6 items-center justify-start lg:px-0 sm:mt-0 
+        <div className=" md:flex pt-5  px-6 items-center justify-start xl:px-0 sm:mt-0 
          flex-wrap flex flex-col lg:justify-center gap-5 ">
           <div className=" flex flex-wrap gap-4  ">
           <div
@@ -158,11 +158,11 @@ const BayAsaddle = () => {
             </div>
           </div>
           </div>
-          <div className=" flex   gap-2  items-end text-center justify-center
+          <div className=" flex   
           font-[Montserrat]  ">
-          <div className=" ">
-            <VectorIcon />
-          </div>
+          
+          <span className="pr-2" ><VectorIcon /></span>  
+          
           <h3 className=" ">
             Saddle with this icon are the top fitting saddles for your horse!
           </h3>

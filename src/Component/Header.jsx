@@ -17,7 +17,7 @@ const Header = () => {
       >
        
           <div className=" flex items-center   ">
-          <Link to={"/home"}>
+          <Link to={"/"}>
             <img
               className=" sm:w-[150px] md:w-[150px]  w-[150px] xl:w-auto "
               src="/saddleLogo-DQlf5x-z.svg"
