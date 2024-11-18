@@ -15,7 +15,7 @@ const Header = () => {
            px-[30px] xl:px-[160px] w-full h-[95px] justify-between
    flex-wrap  relative z-10 "
       >
-        <div className=" flex items-center   ">
+        <div className=" flex items-center   " onClick={() => setSidebar(!sidebar)}>
           <Link to={"/"}>
             <img
               className=" sm:w-[150px] md:w-[150px]  w-[150px] xl:w-auto "
@@ -23,6 +23,7 @@ const Header = () => {
               alt=""
             />{" "}
           </Link>
+          
         </div>
         <div className=" flex pl-[40px] ">
           <ul

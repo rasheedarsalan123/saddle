@@ -34,33 +34,13 @@ const BayAsaddle = () => {
               </h3>{" "}
             </div>
           </div>
-          {/* <div className=" flex  ">
-            <div className="flex  gap-5 pt-5  items-center w-auto justify-between md:gap-[40px] flex-row-reverse ">
-              <button
-                onClick={handlerDelete}
-                className=" border-solid border-2 md:text-[20px] text-[15px]  p-1  font-[500]
-               border-[#2b364b] text-[#2b364b] rounded-[30px]
-                bg-[#ffffff1a]  text-center   w-[120px] sm:w-[181px]  md:px-[56px]  h-[56px]"
-              >
-                Delete
-              </button>
-              <button
-                className=" bg-[#2b364b] font-[500] select-all md:text-[20px] text-[15px] text-white p-1
-               rounded-[30px] md:w-[209px] w-[150px] text-center  px-[32px] md:px-[56px]  h-[56px]"
-                onClick={handletselextAll}
-              >
-                Select All
-              </button>
-            </div>
-          </div> */}
+         
         </div>
         <div className=" md:flex pt-5  px-6 items-center justify-start xl:px-0 sm:mt-0 
          flex-wrap flex flex-col lg:justify-center gap-5 ">
           <div className=" flex flex-wrap gap-4  ">
           <div
-            // onClick={() => {
-            //   setOpenDatePicker(!openDatePicker);
-            // }}
+            
             className=" relative"
           >
             <label
