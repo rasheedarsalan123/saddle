@@ -18,21 +18,21 @@ const Footer = () => {
               src="/saddleLogo-DQlf5x-z.svg"
               alt=""
             /></div>
-         <div className=' '> <p>SCAN. FIT. PERFORM.</p></div>
+         <div className=' '> <p className=" opacity-45">SCAN. FIT. PERFORM.</p></div>
           </div>
         <div >
           <div className='text-white  p-4 text-[20px] font-[Montserrat]
-        font-[700]'><h3>About</h3></div>
-         <div>site map</div></div>
+        font-[700]'><h3>ABOUT</h3></div>
+         <div ><p className=" opacity-45">site map</p></div></div>
         <div ><div className='text-white p-4  text-[20px] font-[Montserrat]
-         font-[700]'><h3>Company</h3></div> <div> <p>Tearm & Conditions</p> <p>
+         font-[700]'><h3>COMPANY</h3></div> <div> <p className=" opacity-45">Terms & Conditions</p> <p className=" opacity-35">
           Privacy Police</p></div></div>
         <div><ul className=' flex gap-5 p-4 text-[25px] items-center justify-center'>
         <li><FaInstagram /></li>  
         <li><FaYoutube/></li>
           <li><TiSocialFacebook/></li>
         <li><IoLogoTiktok/></li>
-        </ul> <p className=' pt-2'>SaddleFit 2024. All rights reserved.</p></div>
+        </ul> <p className=' pt-2 opacity-45'>SaddleFit 2024. All rights reserved.</p></div>
       </div>
     </div>
   )
