@@ -4,13 +4,16 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const BayAsaddle = () => {
   return (
     <>
-      <div className=" w-full h-[100%] relative md:flex  md:items-center md:justify-center   ">
-        <div className=" flex flex-wrap w-auto h-auto ">
+      <div className=" w-full h-full  relative md:flex  md:items-center md:justify-center 
+       pt-8 md:pt-6 lg:pt-6  ">
+        <div className=" flex flex-wrap   items-center 
+         h-auto  mx-auto   px-[22px] sm:px-2  xl:px-11  justify-between 
+          2xl:px-0 xl:max-w-[1300px] w-[95%]">
         <div
-          className=" flex  w-auto items-center   mx-[30px]
-       flex-wrap sm:flex   mt-[50px] md:mt-[110px]  h-auto  justify-between "
+          className=" flex  w-auto items-center   
+       flex-wrap sm:flex    h-auto  justify-between "
         >
-          <div className="  w-100%  ">
+          <div className="   ">
             <div>
               <img src="/star_img--Q7na--3.svg" alt="" />{" "}
             </div>
@@ -36,7 +39,7 @@ const BayAsaddle = () => {
           </div>
          
         </div>
-        <div className=" md:flex pt-5  px-6 items-center justify-start xl:px-0 sm:mt-0 
+        <div className=" md:flex pt-5   items-center justify-start xl:px-0 sm:mt-0 
          flex-wrap flex flex-col lg:justify-center gap-5 ">
           <div className=" flex flex-wrap gap-4  ">
           <div
@@ -139,11 +142,11 @@ const BayAsaddle = () => {
           </div>
           </div>
           <div className=" flex   
-          font-[Montserrat]  ">
+          font-[Montserrat] justify-center items-center  ">
           
           <span className="pr-2" ><VectorIcon /></span>  
           
-          <h3 className=" ">
+          <h3 className=" p ">
             Saddle with this icon are the top fitting saddles for your horse!
           </h3>
         </div>

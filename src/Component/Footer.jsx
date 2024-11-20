@@ -5,10 +5,10 @@ import { FaYoutube } from "react-icons/fa";
 import { IoLogoTiktok } from "react-icons/io5";
 const Footer = () => {
   return (
-    <div className=' bg-[#2b364b] w-[100%] xl:h-[390px] h-auto mt-5 p-2 '>
+    <div className=' bg-[#2b364b] w-[100%] xl:h-[390px] h-auto mt-5 text-center flex justify-center items-center'>
      
-        <div className=' w-full  h-full p-5 sm:justify-around text-white sm:flex lg:flex flex-wrap text-center
-         items-center   font-[Montserrat]
+        <div className=' w-full  h-full p-5 sm:justify-around  text-white 
+        sm:flex lg:flex flex-wrap text-center items-center   font-[Montserrat]
           '>
           <div className=" flex-col flex  justify-between items-center gap-4  ">
             <div >

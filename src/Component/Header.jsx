@@ -10,10 +10,12 @@ const Header = () => {
   const [sidebar, setSidebar] = useState(false);
   return (
     <>
+      <div className=" w-full bg-[#2b364b]   h-[95px] pt-8 md:pt-6 lg:pt-6">
       <div
-        className="flex bg-[#2b364b] 
-           px-[30px] xl:px-[160px] w-full h-[95px] justify-between
-   flex-wrap  relative z-10 "
+        className="flex 
+           px-[22px] sm:px-2  xl:px-11  2xl:px-0 xl:max-w-[1300px] w-[95%]  items-center
+            mx-auto justify-between
+    relative z-10 "
       >
         <div className=" flex items-center   " onClick={() => setSidebar(false)} >
           <Link to={"/"}>
@@ -68,6 +70,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </div>
       </div>
       {sidebar && (
         <>

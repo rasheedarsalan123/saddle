@@ -86,9 +86,12 @@ const AddSaddle = () => {
 
   return (
     <>
+    <div className=" w-full pt-8 md:pt-6 lg:pt-6  flex justify-start items-center">
       <div
-        className=" flex flex-col  sm:max-w-[1300px] justify-center  md:flex  relative md:justify-start  items-center 
-     w-100% h-100% flex-wrap"
+        className=" flex flex-col  mx-auto   px-[22px]
+         sm:px-2  xl:px-11  justify-between  2xl:px-0 xl:max-w-[1300px] w-[95%] 
+           md:flex  relative 
+    h-full flex-wrap"
       >
         <div
           className=" hidden md:w-full h-full md:flex justify-center items-center  absolute
@@ -102,15 +105,16 @@ const AddSaddle = () => {
         ></div>
 
         <div
-          className=" flex   items-center  mx-[30px]
-       flex-wrap sm:flex  md:px-[150px]  mt-[50px] md:mt-[110px] md:w-[90%] h-auto  justify-between "
+          className=" flex    
+       flex-wrap sm:flex    w-full h-auto  justify-between "
         >
-          <div className=" flex flex-col w-100%  ">
+          <div className=" w-full flex  flex-wrap justify-between">
+          <div className=" flex flex-col w-auto ">
             <div>
               <img src="/star_img--Q7na--3.svg" alt="" />{" "}
             </div>
             <div
-              className=" flex flex-col w-auto gap-5
+              className=" flex flex-col w-auto
           "
             >
               <h1 className=" text-[44px] sm:text-[54px] text-[#2b364b] add-horse font-[700]  md:text-[64px] leading-[100%]">
@@ -140,12 +144,12 @@ const AddSaddle = () => {
                 onClick={handletselextAll}
               >
                 Select All
-              </button>
+              </button> </div>
             </div>
           </div>
         </div>
         <div
-          className="flex w-auto mx-[30px] md:px-[150px] items-center mt-[80px] 
+          className="flex w-auto   items-center mt-[80px] 
         gap-[20px]  flex-wrap  "
         >
           <div
@@ -319,7 +323,7 @@ const AddSaddle = () => {
             ))
           )}
         </div>
-      </div>
+      </div> </div>
 
       {addSaddle && (
         <DetailPage
