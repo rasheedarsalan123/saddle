@@ -2,7 +2,7 @@ import React from 'react'
 
 const Schedule = () => {
   return (
-    <div>
+    <div className='h-screen'>
       <h1> Schedule </h1>
     </div>
   )

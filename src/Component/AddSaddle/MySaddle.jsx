@@ -2,7 +2,7 @@ import React from 'react'
 
 const MySaddle = () => {
   return (
-    <div>
+    <div className='h-screen'>
       <h1>My Saddle</h1>
     </div>
   )

@@ -86,9 +86,9 @@ const AddSaddle = () => {
 
   return (
     <>
-    <div className=" w-full pt-8 md:pt-6 lg:pt-6  flex justify-start items-center">
+    <div className=" w-full h-full bg-red-500 pt-8 md:pt-6 lg:pt-6  flex justify-start items-center">
       <div
-        className=" flex flex-col  mx-auto   px-[22px]
+        className=" flex flex-col  mx-auto pt-10  px-[22px]
          sm:px-2  xl:px-11  justify-between  2xl:px-0 xl:max-w-[1300px] w-[95%] 
            md:flex  relative 
     h-full flex-wrap"
@@ -106,9 +106,9 @@ const AddSaddle = () => {
 
         <div
           className=" flex    
-       flex-wrap sm:flex    w-full h-auto  justify-between "
+       flex-wrap sm:flex items-center  w-full h-auto  justify-between "
         >
-          <div className=" w-full flex  flex-wrap justify-between">
+          <div className=" w-full flex items-center  flex-wrap justify-between">
           <div className=" flex flex-col w-auto ">
             <div>
               <img src="/star_img--Q7na--3.svg" alt="" />{" "}
@@ -179,9 +179,7 @@ const AddSaddle = () => {
             </div>
           </div>
 
-          {loading ? (
-            <div className="loader"></div>
-          ) : (
+          {(
             localStorageData &&
             localStorageData.map((item, index) => (
               <div key={index}>
