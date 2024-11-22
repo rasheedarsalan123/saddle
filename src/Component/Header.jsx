@@ -107,7 +107,7 @@ const Header = () => {
               </li>
               <li className="text-white">
                 {" "}
-                <Link to={"/schedule"}> Schedule Now </Link>
+                <Link to={"/partner"}> Partner </Link>
               </li>
               <li className="lg:hidden">
                 {" "}
