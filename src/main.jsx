@@ -10,6 +10,7 @@ import Home from "./Component/AddSaddle/Home.jsx";
 import MySaddle from "./Component/AddSaddle/MySaddle.jsx";
 import BayAsaddle from "./Component/AddSaddle/BayAsaddle.jsx";
 import Schedule from "./Component/AddSaddle/Schedule.jsx";
+import Partner from "./Component/Partner/Partner.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/schedule",
         element: <Schedule />,
+      },
+      {
+        path: "/partner",
+        element: <Partner/>,
       },
     ],
   },

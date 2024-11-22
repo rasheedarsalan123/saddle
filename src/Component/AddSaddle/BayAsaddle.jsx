@@ -4,13 +4,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const BayAsaddle = () => {
   return (
     <>
-      <div className=" w-full h-full flex-col relative md:flex  md:items-center md:justify-center 
+      <div className=" w-full h-full  flex-col relative md:flex  md:items-center md:justify-center 
        pt-8  md:pt-6 lg:pt-6  ">
         <div className=" flex flex-wrap   items-center 
          h-full mx-auto  pt-10  px-[22px] sm:px-2  xl:px-11  justify-between 
           2xl:px-0 xl:max-w-[1300px] w-[95%]">
         <div
-          className=" flex  w-auto items-center   
+          className=" flex w-auto items-center   
        flex-wrap sm:flex    h-full  justify-between "
         >
           <div className="  ">

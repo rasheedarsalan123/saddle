@@ -10,7 +10,7 @@ const Header = () => {
   const [sidebar, setSidebar] = useState(false);
   return (
     <>
-      <div className=" w-full bg-[#2b364b]   h-[95px] pt-8 md:pt-6 lg:pt-6">
+      <div className=" w-full  bg-[#2b364b]   h-[95px] pt-8 md:pt-6 lg:pt-6">
       <div
         className="flex 
            px-[22px] sm:px-2  xl:px-11  2xl:px-0 xl:max-w-[1300px] w-[95%]  items-center
