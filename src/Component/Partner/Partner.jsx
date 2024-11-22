@@ -131,7 +131,7 @@ const Partner = () => {
             
             <div className=" w-full flex flex-col  flex-wrap gap-3">
                 
-            <div className=" relative w-[260px]  sm:w-full flex flex-wrap ">
+            <div className=" relative w-[298px]  sm:w-full flex flex-wrap ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -151,7 +151,7 @@ const Partner = () => {
                     />
                   </div>
                   <div className="sm:flex  justify-between flex-wrap " >
-                  <div className=" relative w-[260px] py-2  ">
+                  <div className=" relative w-[298px]  sm:w-[260px] py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -170,7 +170,7 @@ const Partner = () => {
                 leading-[14px]  border border-[#2b364b] "
                     />
                   </div>
-                  <div className=" relative w-[260px] py-2  ">
+                  <div className=" relative w-[298px]  sm:w-[260px]  py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -191,7 +191,7 @@ const Partner = () => {
                   </div>
                   </div>
                   <div className=" sm:flex  justify-between flex-wrap ">
-                  <div className=" relative w-[260px] py-2  ">
+                  <div className=" relative w-[298px]  sm:w-[260px]  py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -210,7 +210,7 @@ const Partner = () => {
                 leading-[14px]  border border-[#2b364b] "
                     />
                   </div>
-                  <div className=" relative w-[260px] py-2 ">
+                  <div className=" relative w-[298px]  sm:w-[260px]  py-2 ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
