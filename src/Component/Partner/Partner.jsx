@@ -3,16 +3,19 @@ import IconImage from "../../assets/icons/vector.svg";
 
 const Partner = () => {
   return (
-    <div className=" w-full  min-h-screen   ">
-      <div className=" section-1 flex justify-center  items-center h-full w-full">
+    <div className=" w-full  min-h-screen    ">
+      <div className=" section-1 flex justify-center  items-center max-h-[606px] max-w-[1926px]">
         <div className=" relative  h-auto w-full ">
           <img src="Component 9.png" alt="" />
         </div>
-        {/* <div className=" flex justify-center items-center absolute top-[200px]   left-[370px] pb-10  ">
+                
+             <div className=" absolute">
+                 <div className=" flex justify-center items-center
+               pb-10  ">
           <h2 className="text-[44px] sm:text-[54px] text-white add-horse font-[700]  md:text-[64px] leading-[100%]">
             BECOME A PARTNER
           </h2>{" "}
-        </div> */}
+        </div> </div>
       </div>
       <div className=" section-2 h-full bg-[#2b364b]  w-auto   pt-24 md-pt-12 pb-14 ">
         <div className=" w-[80%] mx-auto">
@@ -23,7 +26,7 @@ const Partner = () => {
         <div className=" flex pt-10 flex-wrap justify-center gap-6 mx-[20px]">
           <div
             className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
-              h-[312px] md:py-6 md:px-12 py-[30px] text-white px-[30px] rounded-[10px] font-[Montserrat]"
+              h-[312px] md:py-6 md:px-12 py-[30px] px-[30px]  text-white rounded-[10px] font-[Montserrat]"
           >
             <div>
               {" "}
@@ -113,18 +116,22 @@ const Partner = () => {
             GIVE YOUR BRAND THA SADDLEFIT ADVANTAGE
           </h3>
         </div>
-        <div className=" flex">
-          <div className=" sm:w-[582px] w-[339px] h-auto"></div>
-          <div className=" flex flex-wrap text-center items-center p-6  rounded-[32px] sm:w-[582px] w-[339px] h-auto shadow-lg ">
-           
-            <div >
-              <h3 className="text-[16px] text-center md:text-[24px] font-[Montserrat] text-[#2b364b]  font-bold mb-[24px] leading-auto md:leading-[110%]">
+        <div className=" flex justify-around   md:px-[50px] px-[20px] flex-wrap  w-auto h-full   ">
+          <div className=" flex  text-center items-center  
+           rounded-[32px] sm:w-[582px] w-[339px] h-auto shadow-xl ">
+            <div><img src="cowboy-horse.svg" alt="" /></div>
+          </div>
+          <div className=" flex flex-wrap text-center items-center   
+           rounded-[32px] sm:w-[582px] w-[339px] h-auto shadow-xl   px-4 sm:my-0 my-10">
+        
+              <h3 className="text-[16px] text-center md:text-[24px] font-[Montserrat] text-[#2b364b] 
+               font-bold  leading-auto md:leading-[110%] pt-4">
               Request Information to Become a Partner.
-              </h3>
-            </div>
-            <div className=" w-full flex flex-col  flex-wrap gap-5">
+              </h3> 
+            
+            <div className=" w-full flex flex-col  flex-wrap gap-3">
                 
-            <div className=" relative w-full flex flex-wrap ">
+            <div className=" relative w-[260px]  sm:w-full flex flex-wrap ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -143,8 +150,8 @@ const Partner = () => {
                 leading-[14px]  border border-[#2b364b] "
                     />
                   </div>
-                  <div className=" flex justify-between flex-wrap">
-                  <div className=" relative w-[230px]  ">
+                  <div className="sm:flex  justify-between flex-wrap " >
+                  <div className=" relative w-[260px] py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -163,7 +170,7 @@ const Partner = () => {
                 leading-[14px]  border border-[#2b364b] "
                     />
                   </div>
-                  <div className=" relative w-[260px] ">
+                  <div className=" relative w-[260px] py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -183,8 +190,8 @@ const Partner = () => {
                     />
                   </div>
                   </div>
-                  <div className=" flex justify-between">
-                  <div className=" relative w-[230px] ">
+                  <div className=" sm:flex  justify-between flex-wrap ">
+                  <div className=" relative w-[260px] py-2  ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -203,7 +210,7 @@ const Partner = () => {
                 leading-[14px]  border border-[#2b364b] "
                     />
                   </div>
-                  <div className=" relative w-[260px] ">
+                  <div className=" relative w-[260px] py-2 ">
                     <label
                       htmlFor="Birth Date"
                       className=" absolute top-[10px]
@@ -228,6 +235,34 @@ const Partner = () => {
           </div>
         </div>
       </div>
+
+      <div className="max-w-[1824px] h-[589px] flex justify-center items-center mb-[10px] relative ">
+  <div className="w-[90%] h-full  ">
+    <img
+      src="heroBanner-bg.png"
+      alt=""
+      className="w-full h-full object-cover rounded-[24px] "
+    />
+  </div>
+  <div className="   max-w-[814px] h-[202px]   absolute  justify-center items-center gap-5
+   flex flex-col  py-3  ">
+   <div className="  w-full  h-full  flex flex-col  p-10  py-3 ">
+     <h4 className=" text-4xl text-center md:text-5xl text-white add-horse font-[700]  py-3  
+      leading-tight ">
+      ETIAM ERAT VELIT</h4>
+    <p className=" W-[814px] h-[51px] text-white  py-3  font-[Montserrat]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores laborum, autem blanditiis temporibus accusantium necessitatibus incidunt quod repellat optio similique perferendis, suscipit dicta cumque ipsum sunt eveniet dolor. Nostrum!
+   
+    </p>
+    </div>
+  <div className=" flex  absolute top-[330px] sm:top-[200px] "><button className=" text-[#2b364b]   bg-white  font-[Montserrat] py-[7px] px-[35px] 
+  rounded-[24px] text-[16px]">Submit</button> </div>
+   
+  </div>
+</div>
+
+
+
+
     </div>
   );
 };

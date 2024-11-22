@@ -4,7 +4,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import AddSaddle from "./AddSaddle/AddSaddle";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClear } from "react-icons/md";
-
+import Partner from "./Partner/Partner";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -45,7 +45,7 @@ const Header = () => {
             </li>
             <li className="hidden lg:block text-[14px] font-[500]">
               {" "}
-              <Link to={"/schedule"}> Schedule Now </Link>
+              <Link to={"/partner"}> Partner </Link>
             </li>
             {/* <li className=" text-[23px]">
                 <FiShoppingCart />
