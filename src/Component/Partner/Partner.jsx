@@ -149,7 +149,7 @@ const Partner = () => {
           <div className="flex flex-wrap  items-center 
           sm:p-[32px] p-[24px] mt-[46px] rounded-[32px] sm:w-[582px] w-full
            max-h-[586px] md:h-[408px] h-auto shadow-xl">
-            <h3 className="text-[16px] sm:text-[24px] font-[Montserrat]
+            <h3 className="text-[16px px-2 sm:text-[24px] font-[Montserrat]
              text-[#2b364b] font-bold mb-[16px]">
               Request Information to Become a Partner.
             </h3>
