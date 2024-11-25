@@ -4,52 +4,68 @@ import IconImage from "../../assets/icons/vector.svg";
 const Partner = () => {
   return (
     <div className=" w-full  min-h-screen    ">
-      <div className=" section-1 flex justify-center  items-center max-h-[606px] max-w-[1926px]">
+      <div
+        className=" section-1 flex justify-center  items-center md:max-h-[606px] md:max-w-[1926px]
+        sm:max-w-[768px] sm:max-h-[943px]  max-h-[695px] "
+      >
         <div className=" relative  h-auto w-full ">
-          <img src="Component 9.png" alt="" />
+          <img
+            src="Component 9.png"
+            alt=""
+            className=" object-cover w-[1926px] h-[606px] md:flex hidden "
+          />
+          <img
+            src="Section.png"
+            alt=""
+            className=" object-cover w-full sm:max-h-[943px] sm:flex md:hidden"
+          />
         </div>
 
         <div className=" absolute">
           <div
             className=" flex justify-center items-center
-               pb-10  "
+               pb-10 md:w-[671px] md:h-[81px]  sm:h-[115px] h-[48px] "
           >
-            <h2 className="text-[44px] sm:text-[54px] text-white add-horse font-[700]  md:text-[64px] leading-[100%]">
+            <h2
+              className="text-[40px]  text-white add-horse font-[700]  md:text-[96px]
+             leading-[100%]"
+            >
               BECOME A PARTNER
-            </h2>{" "}
-          </div>{" "}
+            </h2>
+          </div>
         </div>
       </div>
-      <div className=" section-2 h-full bg-[#2b364b]  w-auto   p-6 pb-14 ">
-        <div className=" w-[80%] mx-auto">
-          <h3 className=" text-[28px] text-center sm:text-[24px] text-white add-horse font-[700]  md:text-[64px] leading-[100%]">
-            WHY BECOME A PARTNER
+      <div className="section-2 h-full bg-[#2b364b]  w-auto  pb-14 ">
+        <div className="w-full mx-auto">
+          <h3 className="text-[28px] text-center pt-[24px] lg:pt-[48px] sm:text-[28px] text-white add-horse font-[700] md:text-[40px]  lg:text-[64px] leading-[100%]">
+            WHY BECOME A PARTNER?
           </h3>
         </div>
-        <div className=" flex pt-10 flex-wrap justify-center gap-6 mx-[20px]">
+        <div className=" flex pt-10 flex-wrap justify-center  gap-6 mx-[20px]">
           <div
-            className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
+            className=" border border-[#ffffff4a] lg:w-[468px] bg-[#ffffff14] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
               h-[312px] md:py-6 md:px-12 py-[30px] px-[30px]  text-white rounded-[10px] font-[Montserrat]"
           >
             <div>
               {" "}
-              <img src="Vector.png" alt="" />
+              <img src="Vector.png" alt="" className=" w-[65px] h-[65px]" />
             </div>
             <h4 className=" text-[24px] font-bold mt-[20px] leading-[100%]">
               {" "}
               Enhance Your Product
             </h4>
-            <p className=" text-sm font-medium mt-[20px]">
-              Build better saddles while increasing market share.​
+            <p className=" max-w-[370px] text-sm font-medium mt-[20px]">
+              Build better saddles while increasing market <br />
+              share.​
             </p>
           </div>
           <div
-            className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
-              h-[312px] md:py-6 md:px-12 py-[30px] text-white px-[30px] rounded-[10px] font-[Montserrat]"
+            className=" border border-[#ffffff4a] lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
+              h-[312px] md:py-6 md:px-12 py-[30px] px-[30px] bg-[#ffffff14]  text-white rounded-[10px] font-[Montserrat]"
           >
             <div>
               {" "}
-              <img src="Vector (1).png" alt="" />
+              <img src="Vector (1).png" alt="" className="w-[65px] h-[65px]" />
             </div>
             <h4 className=" text-[24px] font-bold mt-[20px] leading-[100%]">
               {" "}
@@ -61,11 +77,11 @@ const Partner = () => {
             </p>
           </div>
           <div
-            className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
-              h-[312px] md:py-6 md:px-12 py-[30px] text-white px-[30px] rounded-[10px] font-[Montserrat]"
+            className=" border border-[#ffffff4a] bg-[#ffffff14] lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
+              h-[312px] md:py-6 md:px-12 py-[30px] px-[30px]  text-white rounded-[10px] font-[Montserrat]"
           >
             <div>
-              <img src="Vector (2).png" alt="" />
+              <img src="Vector (2).png" alt="" className="w-[65px] h-[65px]" />
             </div>
             <h4 className=" text-[24px] font-bold mt-[20px] leading-[100%]">
               {" "}
@@ -77,12 +93,12 @@ const Partner = () => {
             </p>
           </div>
           <div
-            className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
-              h-[312px] md:py-6 md:px-12 py-[30px] text-white px-[30px] rounded-[10px] font-[Montserrat]"
+            className=" border border-[#ffffff4a] bg-[#ffffff14] lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
+              h-[312px] md:py-6 md:px-12 py-[30px] px-[30px]  text-white rounded-[10px] font-[Montserrat]"
           >
-            <div>
+            <div className="">
               {" "}
-              <img src="Vector (3).png" alt="" />
+              <img src="Vector (3).png" alt="" className="w-[65px] h-[65px]" />
             </div>
             <h4 className=" text-[24px] font-bold mt-[20px] leading-[100%]">
               {" "}
@@ -95,12 +111,12 @@ const Partner = () => {
             </p>
           </div>
           <div
-            className=" border border-white lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
-              h-[312px] md:py-6 md:px-12 py-[30px] text-white px-[30px] rounded-[10px] font-[Montserrat]"
+            className=" border border-[#ffffff4a]  lg:w-[468px] w-[333px] md:w-[328px] lg:h-[305px] md:h-[297px]
+              h-[312px] lg:py-6 lg:px-12 py-[30px] bg-[#ffffff14] text-white px-[30px] rounded-[10px] font-[Montserrat]"
           >
             <div>
               {" "}
-              <img src="Vector (4).png" alt="" />
+              <img src="Vector (4).png" alt="" className="w-[65px] h-[65px]" />
             </div>
             <h4 className=" text-[24px] font-bold mt-[20px] leading-[100%]">
               {" "}
@@ -113,174 +129,165 @@ const Partner = () => {
           </div>
         </div>
       </div>
-      <div className="h-full   w-auto   pt-10 md-pt-6 pb-14">
-        <div className=" w-[80%] mx-[auto] pb-14">
-          <h3 className="text-4xl text-center md:text-5xl text-[#2b364b] add-horse font-[700]   leading-tight mb-12">
+      <div className="h-auto  w-auto mx-[20px]  ">
+        <div className=" w-full h-[70px]  ">
+          <h3 className="text-4xl text-center mt-[64px] md:text-5xl lg:text-[64px] text-[#2b364b] add-horse font-[700]   leading-tight">
             GIVE YOUR BRAND THA SADDLEFIT ADVANTAGE
           </h3>
         </div>
-        <div className=" flex justify-around   md:px-[50px] px-[20px] flex-wrap  w-auto h-full   ">
+        <div className="flex items-center  justify-center xl:justify-between mb-[64px]  mt-[24px] flex-wrap  max-w-[1256px] h-full mx-auto">
           <div
             className=" flex  text-center items-center  
-           rounded-[32px] sm:w-[582px] w-[339px] h-[392px]  "
+           rounded-[32px] p-4 "
           >
-            <div>
-              <img src="cowboy-horse.svg" alt="" />
-            </div>
+            <img
+              src="cowboy-horse.svg"
+              alt=""
+              className="mt-[30.26px] w-[293px] h-[293px]  sm:w-[302px] sm:h-[302px] lg:h-auto lg:w-auto"
+            />
           </div>
-          <div
-            className=" flex flex-wrap text-center items-center   
-           rounded-[32px] sm:w-[582px] w-[339px] md:h-[392px] h-auto shadow-xl   px-4 "
-          >
-            <h3
-              className="text-[16px] text-center md:text-[24px] font-[Montserrat] text-[#2b364b] 
-               font-bold  leading-auto md:leading-[110%] pt-4"
-            >
+          <div className="flex flex-wrap text-center items-center 
+          sm:p-[32px] p-[24px] mt-[46px] rounded-[32px] sm:w-[582px] w-full
+           max-h-[586px] md:h-[408px] h-auto shadow-xl">
+            <h3 className="text-[16px] sm:text-[24px] font-[Montserrat]
+             text-[#2b364b] font-bold mb-[16px]">
               Request Information to Become a Partner.
             </h3>
 
-            <div className=" w-full flex flex-col  flex-wrap gap-3">
-              <div className=" relative w-[298px]  sm:w-full flex flex-wrap ">
+            <div className="w-full flex flex-col gap-[16px]">
+              <div className="relative w-full sm:max-w-[512px]">
                 <label
-                  htmlFor="Birth Date"
-                  className=" absolute top-[10px]
-                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                  text-[14px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  text-opacity-42  "
+                  htmlFor="Company"
+                  className="absolute top-[-8px] left-[16px] bg-white text-[#2b364b] text-[14px] px-[4px]"
                 >
                   Company
                 </label>
                 <input
                   name="Name"
-                  //   value={changeText && inputVal.Name}
-                  //   onChange={handlerInputvalue}
                   type="text"
                   placeholder="Barrel Racers"
-                  className="w-[100%] mt-2 p-5 text-[14px] h-[54px] border-opacity-40  rounded-[60px] 
-                leading-[14px]  border border-[#2b364b] "
+                  className="w-full px-[16px] py-[12px] text-[14px] border rounded-[60px] border-[#2b364b] focus:outline-none"
                 />
               </div>
-              <div className="sm:flex  justify-between flex-wrap ">
-                <div className=" relative w-[298px]  sm:w-[260px] py-2  ">
+
+              <div className="flex flex-col sm:flex-row   gap-[16px] w-full sm:max-w-[518px]">
+                <div className="relative flex-1">
                   <label
-                    htmlFor="Birth Date"
-                    className=" absolute top-[10px]
-                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                  text-[14px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  text-opacity-42  "
+                    htmlFor="First Name"
+                    className="absolute top-[-8px] left-[16px] bg-white text-[#2b364b] text-[14px] px-[4px]"
                   >
-                    Company
+                  First Name
                   </label>
                   <input
-                    name="Name"
-                    //   value={changeText && inputVal.Name}
-                    //   onChange={handlerInputvalue}
+                    name="First Name"
                     type="text"
-                    placeholder="Barrel Racers"
-                    className="w-[100%] mt-2 p-5 text-[14px] h-[54px] border-opacity-40  rounded-[60px] 
-                leading-[14px]  border border-[#2b364b] "
+                    placeholder="First Name"
+                    className="w-full px-[16px] py-[12px] text-[14px] border rounded-[60px] border-[#2b364b] focus:outline-none"
                   />
                 </div>
-                <div className=" relative w-[298px]  sm:w-[260px]  py-2  ">
+                <div className="relative flex-1">
                   <label
-                    htmlFor="Birth Date"
-                    className=" absolute top-[10px]
-                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                  text-[14px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  text-opacity-42  "
+                    htmlFor="Last Name"
+                    className="absolute top-[-8px] left-[16px] bg-white text-[#2b364b] text-[14px] px-[4px]"
                   >
-                    Company
+                   Last Name
                   </label>
                   <input
-                    name="Name"
-                    //   value={changeText && inputVal.Name}
-                    //   onChange={handlerInputvalue}
+                    name="Last Name"
                     type="text"
-                    placeholder="Barrel Racers"
-                    className="w-[100%] mt-2 p-5 text-[14px] h-[54px] border-opacity-40  rounded-[60px] 
-                leading-[14px]  border border-[#2b364b] "
+                    placeholder="Last Name"
+                    className="w-full px-[16px] py-[12px] text-[14px] border rounded-[60px] border-[#2b364b] focus:outline-none"
                   />
                 </div>
               </div>
-              <div className=" sm:flex  justify-between flex-wrap ">
-                <div className=" relative w-[298px]  sm:w-[260px]  py-2  ">
+
+              <div className="flex flex-col sm:flex-row gap-[16px] w-full sm:max-w-[518px]">
+                <div className="relative flex-1">
                   <label
-                    htmlFor="Birth Date"
-                    className=" absolute top-[10px]
-                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                  text-[14px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  text-opacity-42  "
+                    htmlFor="Phone Number"
+                    className="absolute top-[-8px] left-[16px] bg-white text-[#2b364b] text-[14px] px-[4px]"
                   >
-                    Company
+                   Phone Number
                   </label>
                   <input
-                    name="Name"
-                    //   value={changeText && inputVal.Name}
-                    //   onChange={handlerInputvalue}
+                    name="Phone Number"
                     type="text"
-                    placeholder="Barrel Racers"
-                    className="w-[100%] mt-2 p-5 text-[14px] h-[54px] border-opacity-40  rounded-[60px] 
-                leading-[14px]  border border-[#2b364b] "
+                    placeholder="Phone Number"
+                    className="w-full px-[16px] py-[12px] text-[14px] border rounded-[60px] border-[#2b364b] focus:outline-none"
                   />
                 </div>
-                <div className=" relative w-[298px]  sm:w-[260px]  py-2 ">
+                <div className="relative flex-1">
                   <label
-                    htmlFor="Birth Date"
-                    className=" absolute top-[10px]
-                 translate-y-[-50%] left-[10px] pr-[12px] pl-[12px] 
-                  text-[14px] font-[Montserrat] bg-white text-[#2b364b] leading-[14px]  text-opacity-42  "
+                    htmlFor="Email"
+                    className="absolute top-[-8px] left-[16px] bg-white text-[#2b364b] text-[14px] px-[4px]"
                   >
-                    Company
+                   Email
                   </label>
                   <input
-                    name="Name"
-                    //   value={changeText && inputVal.Name}
-                    //   onChange={handlerInputvalue}
+                    name="Email"
                     type="text"
-                    placeholder="Barrel Racers"
-                    className="w-[100%] mt-2 p-5 text-[14px] h-[54px] border-opacity-40  rounded-[60px] 
-                leading-[14px]  border border-[#2b364b] "
+                    placeholder="Email"
+                    className="w-full px-[16px] py-[12px] text-[14px] border rounded-[60px] border-[#2b364b] focus:outline-none"
                   />
                 </div>
               </div>
             </div>
-            <button className=" bg-[#2b364b] text-white m-5 font-[Montserrat] w-[125px] h-[45px] rounded-[24px] text-[16px]">
-              Submit
-            </button>
+
+            <div className="mt-[24px]">
+              <button className="bg-[#2b364b] text-white font-[Montserrat]
+               w-[125px] h-[45px] rounded-[24px] text-[16px]">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-[1824px] h-[589px] flex justify-center items-center mb-[10px] relative px-[30px] ">
-        <div className="w-[100%] h-full   ">
+      <div
+        className=" sm:max-h-[651px] md:h-[589px] sm:max-w-[732px] 
+        md:max-w-[1824px] max-h-[701px]  flex justify-center items-center
+       lg:my-[18px] lg:mx-[48px] my-[8px] mx-[16px] relative "
+      >
+        
           <img
             src="heroBanner-bg.png"
             alt=""
-            className="w-full h-full object-cover rounded-[24px] "
+            className="w-full h-[589px] object-cover rounded-[24px]  md:flex hidden"
           />
-        </div>
-        <div
-          className="   max-w-[814px] h-[202px]   absolute  justify-center items-center gap-5
-   flex flex-col  py-3  "
-        >
-          <div className="  w-full  h-full  flex flex-col    py-3 ">
-            <h4
-              className=" text-4xl text-center md:text-5xl text-white add-horse font-[700]  py-3  
+<img
+            src="Rectangle 6914.svg"
+            alt=""
+            className=" sm:max-w-full sm:max-h-[651px]  sm:flex md:hidden"
+          />
+          
+          <div
+            className="md:w-[814px] justify-center items-center text-center sm:max-w-[412px] h-auto absolute  
+      top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col"
+          >
+            
+              <h4
+                className="text-[32px]  text-center md:leading-[96px] leading-auto md:text-[64px] text-white add-horse font-[700]  
       leading-tight "
-            >
-              ETIAM ERAT VELIT
-            </h4>
-            <p className=" w-[auto]  px-[55px] h-[51px] text-white  text-center py-3 font-[Montserrat]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              maiores laborum, autem blanditiis temporibus accusantium
-              necessitatibus incidunt quod repellat optio similique perferendis,
-              suscipit dicta cumque ipsum sunt eveniet dolor. Nostrum!
-            </p>
-          </div>
-          <div className=" flex  absolute top-[330px] sm:top-[200px] ">
-            <button
-              className=" text-[#2b364b]   bg-white  font-[Montserrat] w-[125px] h-[45px] 
+              >
+                ETIAM ERAT VELIT
+              </h4>
+              <p className="  text-center py-[16px] mx-[20px] md:leading-[24px] leading-auto  
+               md:text-[14px] text-[12px] lg:w-[920px]  sm:w-[480px]  w-[270px]  text-white   font-[Montserrat]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Varius duis at consectetur lorem donec. Risus at ultrices mi
+                tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Varius
+              </p>
+              <button
+                className=" text-[#2b364b]  mx-auto  bg-white  font-[Montserrat] sm:w-[158px] w-[120px]  h-[40px]  sm:h-[50px] font-[500] 
   rounded-[24px] text-[16px]"
-            >
-              Submit
-            </button>{" "}
-          </div>
+              >
+                Submit
+              </button>
+           
+          
         </div>
       </div>
     </div>
