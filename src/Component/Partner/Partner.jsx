@@ -5,14 +5,14 @@ const Partner = () => {
   return (
     <div className=" w-full  min-h-screen    ">
       <div
-        className=" section-1 flex justify-center  items-center md:max-h-[606px] md:max-w-[1926px]
-        sm:max-w-[768px] sm:max-h-[943px]  max-h-[695px] "
+        className=" section-1 flex justify-center  items-center md:max-h-[606px] w-full
+         sm:max-h-[943px]  max-h-[695px] "
       >
         <div className=" relative  h-auto w-full ">
           <img
             src="Component 9.png"
             alt=""
-            className=" object-cover w-[1926px] h-[606px] md:flex hidden "
+            className=" object-cover w-full h-[606px] md:flex hidden "
           />
           <img
             src="Section.png"
@@ -146,7 +146,7 @@ const Partner = () => {
               className="mt-[30.26px] w-[293px] h-[293px]  sm:w-[302px] sm:h-[302px] lg:h-auto lg:w-auto"
             />
           </div>
-          <div className="flex flex-wrap text-center items-center 
+          <div className="flex flex-wrap  items-center 
           sm:p-[32px] p-[24px] mt-[46px] rounded-[32px] sm:w-[582px] w-full
            max-h-[586px] md:h-[408px] h-auto shadow-xl">
             <h3 className="text-[16px] sm:text-[24px] font-[Montserrat]
@@ -244,9 +244,10 @@ const Partner = () => {
       </div>
 
       <div
+    
         className=" sm:max-h-[651px] md:h-[589px] sm:max-w-[732px] 
-        md:max-w-[1824px] max-h-[701px]  flex justify-center items-center
-       lg:my-[18px] lg:mx-[48px] my-[8px] mx-[16px] relative "
+        md:max-w-full max-h-[701px]  flex justify-center items-center
+       lg:my-[18px] lg:mx-[48px] my-[8px] mx-[16px] relative  "
       >
         
           <img
