@@ -143,7 +143,7 @@ const Partner = () => {
             <img
               src="cowboy-horse.svg"
               alt=""
-              className="mt-[30.26px] w-[293px] h-[293px]  sm:w-[302px] sm:h-[302px] lg:h-auto lg:w-auto"
+              className="mt-[30.26px] "
             />
           </div>
           <div className="flex flex-wrap  items-center 

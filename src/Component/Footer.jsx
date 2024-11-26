@@ -62,7 +62,7 @@ const Footer = () => {
             <li>
               <IoLogoTiktok />
             </li>
-          </ul>{" "}
+          </ul>
           <p className=" pt-2 opacity-45">
             SaddleFit 2024. All rights reserved.
           </p>
